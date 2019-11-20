@@ -29,6 +29,14 @@ A escala de menos restritivo à mais restritiva:
 
 São inseridos no inicio da declaração do metodo, variavel, constante, etc.
 
+- Pode ainda ser combinados modificadosres de acesso gerais, tais como:
+- `final`
+- `syncronized`
+- `abstract`
+- `static`
+- `native`
+- `strictfp`
+
 #### Tipo de retorno
 
 Um metodo pode retornar uma unica variavel ou nenhuma, podendo ainda ser um objeto ou um primitivo
@@ -80,6 +88,17 @@ Fica lcalizada logo apos o identificador do metodo, ex: `public void calculaDesc
 
 - O tipo é informado antes da declaração da variavel `public void nome_do_metodo(BigDecimal salario)`
 
+#### Lista de exceptions lançadas
+
+Apos a lista de parametros, podem ser informadas ainda a lista de exceptions que esse metodo pode lançar. A declaração começa com a palavra reservada `throws` seguida do tipo de exeção
+Ex:
+
+```
+  public int getAge(People p) throws RuntimeException {}
+```
+
+Pode ser lançadas 0 ou mais exceptions, informadas sendo separadas por `,`
+
 #### Corpo do metodo
 
 É a parte principal do metodo e contem todo o codigo que compoe sua funcionalidade
@@ -91,6 +110,8 @@ Fica lcalizada logo apos o identificador do metodo, ex: `public void calculaDesc
 - Quando o retonro é void, a instrução return não é obrigatória.
 
 - Um metodo pode ter apenas a strução return, desacompanhado de varial ou literal tipada.
+
+`METODOS ABSTRATOS NÃO POSSUEM CORPO`
 
 ## Criando e chamando metodos
 
