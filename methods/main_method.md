@@ -1,10 +1,8 @@
-# Considerações a respeito do metodo main
+# Considerações a respeito do método main
 
-## ERRO
+Os itens abaixo apresentam erro em tempo de execução, ou seja, COMPILAM, porém NÃO EXECUTA
 
-Os itens abaixo apresentam erro em tempo de execução, ou seja, COMPILAM, porem NÃO EXECUTA
-
-- O metodo main deve sempre conter a palavra `static`
+- O método main deve sempre conter a palavra `static`
 
 ```
 public class E5 {
@@ -42,4 +40,4 @@ static void main(String[] args){
 
 ## Alterações que funcionam
 
-- O metodo main pode ser `final`
+- O método main pode ser `final`

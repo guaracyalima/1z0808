@@ -1,8 +1,14 @@
 class E1 {
-	public static void main( String[] args){
-		int i = new E1().metodoSemRetorno();
+	
+	public int getAge(){
+    int age = 27;
+    return age;
+  }
+
+  //retornando um objeto
+
+  public ArrayList getAllEmployers() throws IOException, SQLException, RuntimeException{
+    return new ArrayList();
 	}
-
-	public void metodoSemRetorno(){};
-
+	
 }
